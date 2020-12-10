@@ -11,10 +11,10 @@
           <el-radio label="女"></el-radio>
         </el-radio-group>
       </el-form-item>
-      <el-form-item label="活动区域">
+      <el-form-item label="专业">
         <el-select v-model="form.region" placeholder="请选择活动区域">
-          <el-option label="区域一" value="shanghai"></el-option>
-          <el-option label="区域二" value="beijing"></el-option>
+          <el-option label="本科" value="shanghai"></el-option>
+          <el-option label="大专" value="beijing"></el-option>
         </el-select>
       </el-form-item>
       <el-form-item label="出生日期">
@@ -33,7 +33,7 @@
           <el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
         </el-checkbox-group>
       </el-form-item>
-      <el-form-item label="活动形式">
+      <el-form-item label="备注">
         <el-input type="textarea" v-model="form.desc"></el-input>
       </el-form-item>
       <el-form-item>

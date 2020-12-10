@@ -13,8 +13,8 @@
       </el-form-item>
       <el-form-item label="专业">
         <el-select v-model="form.region" placeholder="请选择活动区域">
-          <el-option label="本科" value="shanghai"></el-option>
-          <el-option label="大专" value="beijing"></el-option>
+          <el-option label="本科" value="1"></el-option>
+          <el-option label="大专" value="2"></el-option>
         </el-select>
       </el-form-item>
       <el-form-item label="出生日期">

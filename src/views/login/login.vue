@@ -25,7 +25,7 @@
             </el-input>
           </el-form-item>
           <el-form-item>
-            <el-button @click="submitForm('ruleForm')" class="button-login" size="default" type="primary">
+            <el-button :disabled="isLogin" @click="submitForm('ruleForm')" class="button-login" size="default" type="primary">
               <i class="el-icon-s-unfold "/>&nbsp;&nbsp;登&nbsp;录</el-button>
           </el-form-item>
         </el-form>
@@ -37,6 +37,11 @@
 import { mapActions } from 'vuex'
 import { setStorage } from '@/util/util'
 export default {
+  computed: {
+    isLogin () {
+      return !this.formLogin.name || !this.formLogin.password
+    }
+  },
   data () {
     return {
       formLogin: {},

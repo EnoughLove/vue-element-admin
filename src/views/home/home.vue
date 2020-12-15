@@ -269,14 +269,14 @@ export default {
               type: 'category',
               boundaryGap: false,
               axisLine: { onZero: true },
-              data: this.timeData()
+              data: this.timeDatas
             },
             {
               gridIndex: 1,
               type: 'category',
               boundaryGap: false,
               axisLine: { onZero: true },
-              data: this.timeData()
+              data: this.timeDatas
               // position: 'top'
             }
           ],

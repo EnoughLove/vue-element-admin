@@ -142,6 +142,8 @@ export default {
     handleCurrentChange(val) {
       console.log(val)
     }
+  },
+  created() {
   }
 }
 </script>
